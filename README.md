@@ -23,9 +23,8 @@ The assembly details are stated here. Firstly, the I2C pins of ESP32 are connect
 
 The illustration of the connection between main components is shown here. The component on the left side is the driver of LCD screen, the board on top is ESP32, and the board at the bottom is Raspberry Pi Pico. As we can see, LCD screen with drive attached is connected to the ESP32 board via I2C, and ESP32 communicates with RP2040 via 3 GPIO pins.
 
-<p>
-    ![image](https://user-images.githubusercontent.com/113930091/227345971-10ded42e-fe74-4de6-a5f0-da4d8fe7abc5.png)
-</p>
+![image](https://user-images.githubusercontent.com/113930091/227345971-10ded42e-fe74-4de6-a5f0-da4d8fe7abc5.png)
+
 
 # Mechanical Part
 For the mechanical part, we used three pumps. The schematic is shown as below:
@@ -35,14 +34,14 @@ For the mechanical part, we used three pumps. The schematic is shown as below:
 
 We used 3D printing and laser cutting to build our packaging. We started from 3D modeling. The modeling image and final design are shown as below:
 
-<p>
+
     ![image](https://user-images.githubusercontent.com/113930091/227345659-45705319-bb84-4421-9165-ef396a634a0c.png)
-</p>
+
 
 From the rare view and side view, we can see the three-pump design clearly.
 
-<p>
+
     ![image](https://user-images.githubusercontent.com/113930091/227345756-2683ce59-cc4c-422b-b40e-d490b4ca8a28.png)
-</p>
+
 
 
