@@ -40,8 +40,10 @@ We used 3D printing and laser cutting to build our packaging. We started from 3D
 
 From the rare view and side view, we can see the three-pump design clearly.
 
+![image](https://user-images.githubusercontent.com/113930091/227347228-4fe4f0e6-b80d-487b-bed7-5d8de695e2cb.png)
+![image](https://user-images.githubusercontent.com/113930091/227348642-a387f97a-4537-49e1-9095-48f3cc356336.png)
 
-![image](https://user-images.githubusercontent.com/113930091/227345756-2683ce59-cc4c-422b-b40e-d490b4ca8a28.png)
+
 
 
 
