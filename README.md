@@ -35,13 +35,13 @@ For the mechanical part, we used three pumps. The schematic is shown as below:
 We used 3D printing and laser cutting to build our packaging. We started from 3D modeling. The modeling image and final design are shown as below:
 
 
-    ![image](https://user-images.githubusercontent.com/113930091/227345659-45705319-bb84-4421-9165-ef396a634a0c.png)
+![image](https://user-images.githubusercontent.com/113930091/227345659-45705319-bb84-4421-9165-ef396a634a0c.png)
 
 
 From the rare view and side view, we can see the three-pump design clearly.
 
 
-    ![image](https://user-images.githubusercontent.com/113930091/227345756-2683ce59-cc4c-422b-b40e-d490b4ca8a28.png)
+![image](https://user-images.githubusercontent.com/113930091/227345756-2683ce59-cc4c-422b-b40e-d490b4ca8a28.png)
 
 
 
