@@ -14,10 +14,15 @@ The purpose of our project is to build an automatic cocktail machine that can pr
 
 # Project Instructions
 Our project is composed of two microcontrollers: RP2040 and ESP32 Feather, three electric pumps, one LCD screen and a 3D printed model. The diagram of the overall operation is shown here. ESP32 receives the voice command from users and send their choice to RP2040 through GPIO. To realize this functionality, the ThingSpeak IoT platform and IFTTT service are used. IFTTT is for receiving the voice command and post the information on the IoT server, then ESP32 will read the drink selection from the server.
+
 ESP32 is responsible for reading the data on ThingSpeak, sending the information to RP2040 and modifying the content displaying on the LCD screen. Micropython is used to realize the functionality. For the ESP32 to access IoT server, it needs to connect to WiFi. Once it’s connected to WiFi, it reads the data on ThingSpeak channel and send out the information by enabling and setting the corresponding GPIO pin. Besides, the content of LCD screen is also changed accordingly. 
+
 RP2040 receives the information form ESP32 via GPIO. The operation of RP2040 is written in C. There is a state machine constructed in the code, and RP2040 will enter different states based on the information it receives and actions it has already taken. As shown in the code, there are 3 states: IDLE, DRAW, END. When the drink is decided, the three pumps will be activated via GPIO in order, for a specific time set by the code to make the correct drink. 
+
 The assembly details are stated here. Firstly, the I2C pins of ESP32 are connected to the I2C pins of LCD screen. Three GPIO pins of ESP32 are directly connected three GPIO pins of RP2040 for sending the decision of drink. The power wires of pumps are directly connected to the 12V power supply, and the ground wires are connected to the emitter of BJT. The collector of BJT is connected to ground, and the base is connected to the corresponding GPIO pin of RP2040 that is set when a specific pump is expected to operate.
+
 The illustration of the connection between main components is shown here. The component on the left side is the driver of LCD screen, the board on top is ESP32, and the board at the bottom is Raspberry Pi Pico. As we can see, LCD screen with drive attached is connected to the ESP32 board via I2C, and ESP32 communicates with RP2040 via 3 GPIO pins.
+
 ![image](https://user-images.githubusercontent.com/113930091/227342422-55a62ac8-0ede-49bf-937a-becf07d61d9d.png)
 
 # Mechanical Part
