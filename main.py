@@ -127,3 +127,4 @@ while(True):
                 LCD.clear()
                 LCD.puts("    Ready for ")
                 LCD.puts("    next order", 0, 1)
+
