@@ -28,7 +28,9 @@ The illustration of the connection between main components is shown here. The co
 # Mechanical Part
 For the mechanical part, we used three pumps. The schematic is shown as below:
 ![image](https://user-images.githubusercontent.com/113930091/227343495-1fabb600-c2ba-48e9-b447-c1b9846fd085.png)
+
 We used 3D printing and laser cutting to build our packaging. We started from 3D modeling. The modeling image and final design are shown as below:
+
 <p>
     <img src="/Narrative/3d1.png"/>
 </p>
@@ -37,6 +39,6 @@ From the rare view and side view, we can see the three-pump design clearly.
 
 <p>
     <img src="/Narrative/3d2.png"/>
-</p> 
+</p>
 
 
