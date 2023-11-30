@@ -3,6 +3,33 @@ The purpose of our project is to build an automatic cocktail machine that can pr
 
 ![image](https://user-images.githubusercontent.com/113930091/227333192-e5442c3f-2ff4-4ed2-ae77-ab86264192bd.png)
 
+## ESP32和LCD屏幕的I2C通信过程
+
+硬件连接：
+
+首先，确保您正确连接了ESP32与LCD屏幕，包括SDA（数据线）和SCL（时钟线）连接到相应的引脚。还需要连接电源和地线。
+初始化I2C总线：
+
+在ESP32上初始化I2C总线，以便与LCD屏幕进行通信。您需要指定I2C总线的速度（通常以Hz为单位）和SDA、SCL引脚的引脚号。
+扫描I2C地址（可选）：
+
+在开始通信之前，您可以扫描I2C总线上的设备地址，以确定LCD屏幕的I2C地址。大多数LCD屏幕将在数据手册中提供其默认地址。
+建立通信：
+
+使用ESP32的I2C库函数，通过I2C总线向LCD屏幕发送启动信号，并指定LCD屏幕的I2C地址。这将建立与LCD屏幕的通信。
+发送数据和命令：
+
+根据LCD屏幕的规格，您可以发送命令或数据以控制LCD的显示。命令通常用于初始化LCD，并设置显示模式、清除屏幕等。数据用于在LCD上显示文本、图像或其他内容。
+接收响应：
+
+根据需要，您可以接收LCD屏幕的响应或确认。一些LCD屏幕可能会返回状态或确认信息，以便您知道命令是否成功执行。
+结束通信：
+
+当您完成与LCD屏幕的通信时，请发送停止信号以结束I2C通信。这将释放总线，使其他设备可以进行通信。
+关闭I2C总线：
+
+最后，关闭ESP32上的I2C总线以释放资源。
+
 # List of Main Components
 [Adafruit ESP32 Feather Board](https://www.adafruit.com/product/3405)
 
